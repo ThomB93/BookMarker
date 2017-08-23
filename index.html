@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bookmarker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Custom styles for this template -->
+    <style>
+        body {
+            padding-top: 54px;
+        }
+
+        @media (min-width: 992px) {
+            body {
+                padding-top: 56px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="jumbotron">
+                    <h1 class="display-3">Book<span style="color: #071773">marker</span></h1>
+                    <p class="lead">Bookmark your favorite sites!</p>
+                    <hr class="my-4">
+                    <form action="" id="uriForm" >
+
+                        <div class="formgroup">
+                            <label for="sitename">Sitename</label>
+                            <input type="text" class="form-control" id="siteNameInput" placeholder="Enter site name..." required>
+                        </div>
+                        <div class="formgroup">
+                            <label for="siteurl">Site URL</label>
+                            <input type="text" class="form-control" id="siteUrlInput" placeholder="Enter website URL..." required>
+                        </div>
+                        <select id="categorySelectList" class="custom-select float-left">
+                                <option selected>Primary Bookmarks</option>
+                                <option value="otherBookmarks">Other Bookmarks</option>
+                              </select>
+                        <button onclick="addBookmark()" id="submitBtn" type="submit" role="button" class="btn btn-primary float-right">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div id="bookmarksResults" class="col-md-6">
+                <div id="accordion" role="tablist">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Primary Bookmarks
+                          </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <div id="primaryBookmarks" class="list-group">
+                                    <button type="button" class="list-group-item list-group-item-action">
+                                                  Cras justo odio
+                                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingTwo">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                  Other Bookmarks
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <div id="otherBookmarks" class="list-group">
+                                    <button type="button" class="list-group-item list-group-item-action">
+                                                          Cras justo odio
+                                                        </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

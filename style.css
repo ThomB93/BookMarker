@@ -1,0 +1,62 @@
+#submitBtn {
+    margin-top: 10px !important;
+}
+
+/*BOOTSTRAP OVERRIDES*/
+.custom-select {
+    margin-top: 10px !important;
+    background-color: #F24B6A;
+    color: #000;
+    border-color: #000;
+}
+.custom-select:focus {
+    border-color: #000;
+    color: #000;
+}
+.jumbotron {
+    border-color: #000 !important;
+    border-radius: 0.5rem !important;
+    border-style: solid;
+    background-color: #FDEBE3;
+}
+.btn-primary {
+    color: #000;
+    background-color: #F24B6A;
+    border-color: #000;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #F24B6A;
+    border-color: #000;
+}
+.form-control {
+    border-color: #000;
+}
+.form-control:focus {
+    border-color: #F24B6A;
+}
+.card-header {
+    background-color: #FDEBE3;
+    border-bottom: 0.5px solid #000;
+}
+.card {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 0.5px solid #000;
+    margin-bottom: 2px;
+}                               
+.list-group-item-action:focus, .list-group-item-action:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: #eee;
+    cursor: pointer;
+}
+a:hover {
+    color: #071773;
+    text-decoration: none;
+}
+a:focus {
+    color: #F24B6A;
+    text-decoration: none;
+}
