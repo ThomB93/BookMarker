@@ -1,6 +1,5 @@
-var form = document.getElementById("uriForm");
 function addBookmark() {
-    if (form.checkValidity() == true) {
+    console.log("clicked btn");
         var sitename = $("#siteNameInput").val();
         var siteurl = $("#siteUrlInput").val();
         var selectedCategory = $('#categorySelectList').find(":selected").text();
@@ -15,8 +14,3 @@ function addBookmark() {
             $("#collapseTwo").addClass("show");
         }
     }
-}
-
-$(document).ready(function () {
-
-});

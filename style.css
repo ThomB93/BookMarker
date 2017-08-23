@@ -38,6 +38,7 @@
 .card-header {
     background-color: #FDEBE3;
     border-bottom: 0.5px solid #000;
+    border-top: 0.1em solid #000;
 }
 .card {
     border-left: 1px solid #000;
